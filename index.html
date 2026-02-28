@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st ICXXXX 2026 | Faculty of Technology, University of Delhi</title>
+    
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; img-src 'self' data: https:;">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="container nav-content">
+            <div class="logo">ICXXXX 2026</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cfp">Call for Papers</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#registration">Registration</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#cfp" class="btn btn-gold">Submit Paper</a>
+            <div class="hamburger">☰</div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content reveal">
+                    <span class="hero-badge">1st Edition • Planning for the Future</span>
+                    <h1>International Conference on Advanced Computational Intelligence</h1>
+                    <p>Hosted by the <strong>Faculty of Technology, University of Delhi</strong>. Pioneering the next generation of academic research and technological innovation. </p>
+                    
+                    <div class="hero-btns">
+                        <a href="#cfp" class="btn btn-gold">Submit Your Paper</a>
+                        <a href="#about" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dates-strip">
+            <div class="container">
+                <div class="countdown-container">
+                    Time until Paper Submission Deadline: <span id="timer" style="color: var(--gold); font-weight: bold;">-- : -- : -- : --</span>
+                </div>
+                <div class="dates-grid">
+                    <div class="date-card">
+                        <h4>Paper Submission</h4>
+                        <div class="date-val">Apr 01, 2026</div>
+                    </div>
+                    <div class="date-card">
+                        <h4>Acceptance Notification</h4>
+                        <div class="date-val">May 15, 2026</div>
+                    </div>
+                    <div class="date-card">
+                        <h4>Camera Ready</h4>
+                        <div class="date-val">Jun 10, 2026</div>
+                    </div>
+                    <div class="date-card">
+                        <h4>Conference Dates</h4>
+                        <div class="date-val">Jul 15-17, 2026</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding" id="about">
+            <div class="container">
+                <div class="reveal" style="text-align: center; margin-bottom: 60px;">
+                    <h2 class="section-title" style="margin: 0 auto 20px;">About the Organizers & Partners</h2>
+                    <p style="max-width: 800px; margin: 0 auto;">This inaugural edition marks a significant milestone in our journey toward fostering global academic collaboration and technological advancement.</p>
+                </div>
+
+                <div class="about-collaborators">
+                    <div class="collab-card reveal">
+                        <div class="logo-wrapper">
+                            <img src="images/du_logo.jpeg" alt="University of Delhi Logo" class="collab-logo">
+                        </div>
+                        <h3>Faculty of Technology</h3>
+                        <p>As the premier engineering and technology faculty at DU, we are dedicated to building the future through cutting-edge research, innovative pedagogy, and a forward-looking approach to computational sciences.</p>
+                    </div>
+
+                    <div class="collab-card reveal">
+                        <div class="photo-wrapper">
+                            <img src="images/vice_regal_lodge.webp" alt="Vice Regal Lodge, University of Delhi" class="collab-photo">
+                        </div>
+                        <h3>University of Delhi</h3>
+                        <p>Established in 1922, the University of Delhi is recognized globally for its academic excellence. It serves as the historic and intellectual foundation for this international gathering.</p>
+                    </div>
+
+                    <div class="collab-card reveal">
+                        <div class="logo-wrapper">
+                            <img src="images/springer_logo.png" alt="Springer Nature Logo" class="collab-logo">
+                        </div>
+                        <h3>Springer Nature</h3>
+                        <p>We are proud to collaborate with Springer Nature. All accepted and presented papers for this first edition will be published in their prestigious proceedings, ensuring global reach and indexing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding" id="cfp" style="background: var(--white);">
+            <div class="container">
+                <h2 class="section-title">Conference Tracks</h2>
+                <div class="tracks-grid">
+                    <div class="track-card reveal">
+                        <h3>Track 1: Machine Learning</h3>
+                        <p>Deep Learning, Neural Networks, and applications in complex system modeling.</p>
+                    </div>
+                    <div class="track-card reveal">
+                        <h3>Track 2: Data Science</h3>
+                        <p>Big Data Analytics, Visualization, and Data Mining techniques for large-scale sets.</p>
+                    </div>
+                    <div class="track-card reveal">
+                        <h3>Track 3: Cyber Security</h3>
+                        <p>Cryptography, Network Security, and Blockchain applications in modern infra.</p>
+                    </div>
+                    <div class="track-card reveal">
+                        <h3>Track 4: IoT & Sensors</h3>
+                        <p>Smart city frameworks, edge computing, and wireless sensor network protocols.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding" id="speakers" style="background: var(--lavender);">
+            <div class="container">
+                <h2 class="section-title" style="text-align: center; margin: 0 auto 50px;">Keynote Speakers</h2>
+                <p style="text-align: center; margin-bottom: 50px; opacity: 0.8;">Distinguished speakers for our inaugural edition will be announced shortly.</p>
+                
+                <div class="speaker-grid">
+                    <div class="speaker-card reveal">
+                        <div class="speaker-img-placeholder">
+                            <span>[Speaker Image]</span>
+                        </div>
+                        <h3 style="color: var(--navy);">Keynote Speaker</h3>
+                        <p style="font-size: 0.9rem; opacity: 0.7;">Details to be updated</p>
+                    </div>
+                    <div class="speaker-card reveal">
+                        <div class="speaker-img-placeholder">
+                            <span>[Speaker Image]</span>
+                        </div>
+                        <h3 style="color: var(--navy);">Keynote Speaker</h3>
+                        <p style="font-size: 0.9rem; opacity: 0.7;">Details to be updated</p>
+                    </div>
+                    <div class="speaker-card reveal">
+                        <div class="speaker-img-placeholder">
+                            <span>[Speaker Image]</span>
+                        </div>
+                        <h3 style="color: var(--navy);">Keynote Speaker</h3>
+                        <p style="font-size: 0.9rem; opacity: 0.7;">Details to be updated</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding" id="registration" style="background: var(--offwhite);">
+            <div class="container">
+                <h2 class="section-title" style="text-align: center; margin: 0 auto 50px;">Registration Fees</h2>
+                <div class="pricing-grid">
+                    <div class="price-card reveal">
+                        <h3>Student Delegate</h3>
+                        <div class="price">₹4,500 <span>/ $150</span></div>
+                        <a href="#" class="btn btn-outline" style="width: 100%; border-color: var(--navy); color: var(--navy);">Portal Opening Soon</a>
+                    </div>
+                    <div class="price-card featured reveal">
+                        <h3>Professional</h3>
+                        <div class="price">₹8,500 <span>/ $350</span></div>
+                        <a href="#" class="btn btn-gold" style="width: 100%;">Portal Opening Soon</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>1st ICXXXX 2026</h4>
+                    <p style="opacity: 0.7; font-size: 0.9rem;">Hosted by the Faculty of Technology, University of Delhi. Collaborative proceedings by Springer Nature.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Organizers</a></li>
+                        <li><a href="#cfp">Call for Papers</a></li>
+                        <li><a href="#speakers">Speakers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p style="opacity: 0.7; font-size: 0.9rem;">Email: info.icxxxx@fot.du.ac.in<br>Address: Faculty of Technology, North Campus, Delhi 110007</p>
+                </div>
+            </div>
+            <div class="bottom-bar">
+                <div>&copy; 2026 Faculty of Technology, University of Delhi. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
