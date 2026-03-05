@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Countdown Timer (Set to April 1, 2026) ---
+    // --- Countdown Timer (Set to April 15, 2026) ---
     const timerElement = document.getElementById("timer");
     if (timerElement) {
-        // Updated deadline to April 01, 2026
-        const deadline = new Date("Apr 01, 2026 23:59:59").getTime();
+        // Updated deadline to April 15, 2026
+        const deadline = new Date("Apr 15, 2026 23:59:59").getTime();
         
         const timer = setInterval(function() {
             const now = new Date().getTime();

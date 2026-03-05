@@ -1,0 +1,128 @@
+/* Specific styles for the submission page */
+
+.portal-header {
+    padding: 120px 0 60px;
+    background: linear-gradient(135deg, var(--navy) 0%, #001f2e 100%);
+    color: var(--white);
+    text-align: center;
+}
+
+.portal-container {
+    max-width: 800px;
+    margin: -40px auto 80px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.2);
+}
+
+input[type="file"] {
+    padding: 10px;
+    background: var(--offwhite);
+    border: 1px dashed #aaa;
+    cursor: pointer;
+}
+
+/* Tab Styles */
+.tabs {
+    display: flex;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #eee;
+}
+
+.tab-btn {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #777;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.tab-btn.active {
+    color: var(--navy);
+    border-bottom: 3px solid var(--gold);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Specific Buttons */
+.submit-btn {
+    width: 100%; 
+    font-size: 1.1rem; 
+    padding: 15px;
+}
+
+.track-btn {
+    width: 100%; 
+    background: var(--navy); 
+    color: white;
+}
+
+.track-btn:hover {
+    background: var(--white);
+    color: var(--navy);
+}
+
+/* Tracking Result Card */
+.tracking-result {
+    margin-top: 20px;
+    padding: 20px;
+    background: var(--lavender);
+    border-left: 4px solid var(--purple);
+    border-radius: 4px;
+    display: none;
+}
+
+/* Minimal Footer */
+.portal-footer {
+    background: var(--navy); 
+    color: white; 
+    padding: 40px 0; 
+    text-align: center;
+}

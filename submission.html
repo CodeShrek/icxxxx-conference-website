@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Submission & Tracking | AURA 2027</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="submission.css">
+    
+    <script src="submission.js" defer></script>
+</head>
+<body>
+
+    <nav id="navbar" class="scrolled">
+        <div class="container nav-content">
+            <div class="logo"><a href="index.html" style="color: white;">AURA 2027</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#cfp">Call for Papers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="portal-header">
+        <div class="container">
+            <h1 class="serif">Author Portal</h1>
+            <p>Submit your research or track an existing application.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="portal-container">
+            
+            <div class="tabs">
+                <button class="tab-btn active" onclick="switchTab(event, 'submit')">Submit Paper</button>
+                <button class="tab-btn" onclick="switchTab(event, 'track')">Track Application</button>
+            </div>
+
+            <div id="submit" class="tab-content active">
+                <h2 style="margin-bottom: 20px; color: var(--navy);">New Submission</h2>
+                <form action="#" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="fullName">Corresponding Author Full Name</label>
+                        <input type="text" id="fullName" class="form-control" placeholder="Dr. Jane Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Institutional Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="jane.doe@university.edu" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Paper Title</label>
+                        <input type="text" id="title" class="form-control" placeholder="Enter the exact title of your paper" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="track">Select Conference Track</label>
+                        <select id="track" class="form-control" required>
+                            <option value="">-- Choose a Track --</option>
+                            <option value="1">Track 1: AI in Smart Utilities and Infrastructure</option>
+                            <option value="2">Track 2: AI for Renewable Energy Systems</option>
+                            <option value="3">Track 3: Industrial Automation and Robotics</option>
+                            <option value="4">Track 4: IoT and Edge AI for Energy & Automation</option>
+                            <option value="5">Track 5: Data Science and Optimization in Sustainable Systems</option>
+                            <option value="6">Track 6: Cybersecurity and Ethics in AI-driven Systems</option>
+                            <option value="7">Track 7: Emerging applications of AI</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="paperFile">Upload Paper (PDF, Springer Format)</label>
+                        <input type="file" id="paperFile" class="form-control" accept=".pdf" required>
+                        <small style="color: #666; display: block; margin-top: 5px;">Maximum file size: 10MB. Ensure your paper strictly follows the Springer LNEE formatting guidelines.</small>
+                    </div>
+                    <button type="button" class="btn btn-gold submit-btn" onclick="handleMockSubmit()">Submit Application</button>
+                </form>
+            </div>
+
+            <div id="track" class="tab-content">
+                <h2 style="margin-bottom: 20px; color: var(--navy);">Track Submission Status</h2>
+                <p style="margin-bottom: 20px; color: #555;">Enter your Submission ID or registered Email Address to check the status of your paper.</p>
+                <div class="form-group">
+                    <label for="trackId">Submission ID or Email</label>
+                    <input type="text" id="trackId" class="form-control" placeholder="e.g., AURA-2027-1042">
+                </div>
+                <button type="button" class="btn btn-outline track-btn" onclick="showTrackingResult()">Check Status</button>
+
+                <div id="trackingResult" class="tracking-result">
+                    <h4 style="color: var(--navy); margin-bottom: 10px;">Status: <span style="color: var(--gold);">Under Review</span></h4>
+                    <p style="font-size: 0.95rem;">Your paper has been received and is currently undergoing double-blind peer review. You will receive an email notification by May 15, 2026.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="portal-footer">
+        <p>&copy; 2027 Faculty of Technology, University of Delhi.</p>
+    </footer>
+
+</body>
+</html>
